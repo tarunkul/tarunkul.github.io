@@ -129,7 +129,7 @@
     const name = String(form.get('name') || '').trim();
     const email = String(form.get('email') || '').trim();
     const message = String(form.get('message') || '').trim();
-    const subject = encodeURIComponent(`Portfolio enquiry from ${name || 'a visitor'}`);
+    const subject = encodeURIComponent(`AI project enquiry from ${name || 'a visitor'}`);
     const body = encodeURIComponent(`Hello Dr. Tarun,\n\n${message}\n\nRegards,\n${name}\n${email}`);
     window.location.href = `mailto:tarun.kul@gmail.com?subject=${subject}&body=${body}`;
   });

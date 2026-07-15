@@ -2,7 +2,7 @@
 
 ![Portfolio preview](assets/portfolio-preview.png)
 
-A modern, responsive personal portfolio for AI/ML research scientist, deep-learning engineer, and applied AI roles. It is ready for direct deployment on GitHub Pages without npm or a build process.
+A modern, responsive personal portfolio for applied AI projects, research collaboration, and product-focused technical work. It is ready for direct deployment on GitHub Pages without npm or a build process.
 
 ## Portfolio positioning
 
