@@ -1,0 +1,9 @@
+{
+  "name": "Dr. Tarun Kumar Kulshrestha - Portfolio",
+  "short_name": "Tarun AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [{"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
