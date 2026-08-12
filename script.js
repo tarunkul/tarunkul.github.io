@@ -60,7 +60,7 @@
   }, { rootMargin: '-35% 0px -58% 0px' });
   sections.forEach(section => sectionObserver.observe(section));
 
-  const roles = ['Generative AI', 'Computer Vision', 'Efficient Deep Learning', 'LLM & RAG Systems', 'Document Intelligence'];
+  const roles = ['Document Intelligence', 'Private Knowledge Assistants', 'AI Workflow Automation', 'Custom AI Prototypes', 'Efficient Deep Learning'];
   const typedText = document.getElementById('typedText');
   if (typedText && !reduceMotion) {
     let roleIndex = 0;
@@ -93,11 +93,12 @@
   }
 
   const terminalMessages = [
-    'optimizing model architecture...',
-    'validating structured output...',
-    'profiling inference latency...',
-    'preparing reproducible experiment...',
-    'deploying resource-aware pipeline...'
+    'reading financial_document.pdf...',
+    'detecting tables and key fields...',
+    'validating extracted values...',
+    'generating structured JSON...',
+    'exporting verified Excel report...',
+    'workflow completed successfully.'
   ];
   const terminalText = document.getElementById('terminalText');
   if (terminalText && !reduceMotion) {
