@@ -1,18 +1,19 @@
-# Dr. Tarun Kumar Kulshrestha — Personal Portfolio
+# Tarun Kulshrestha — Personal Portfolio
 
 ![Portfolio preview](assets/portfolio-preview.png)
 
-A modern, responsive personal portfolio for applied AI projects, research collaboration, and product-focused technical work. It is ready for direct deployment on GitHub Pages without npm or a build process.
+A modern, responsive personal site for discussing difficult applied AI problems, technical collaborations, and research-to-prototype work. It is ready for direct deployment on GitHub Pages without npm or a build process.
 
 ## Portfolio positioning
 
-The site highlights:
+The homepage is organized around a client-first journey:
 
-- Generative AI, computer vision, LLM/RAG workflows, and efficient deep learning
-- Applied AI products and prototypes
-- Research publications and selected workshops
-- PolyU/UBDA experience supporting researchers across departments with ML/DL method selection, experiment planning, implementation guidance, and proposal methodology
-- A downloadable, industry-focused resume
+- Clear applied-AI positioning and project discussion path in the first viewport
+- Four problem areas: documents, private knowledge, visual data, and AI feasibility
+- Selected non-confidential prototypes: DocsMind and BusinessAgent OS
+- Research credibility through curated publications and PolyU/UBDA experience
+- Technical depth and selected workshops as supporting evidence
+- A downloadable résumé as a secondary reference
 
 ## GitHub Pages address
 

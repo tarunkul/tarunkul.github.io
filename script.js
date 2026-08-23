@@ -6,36 +6,54 @@
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
   const toast = document.getElementById('toast');
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   let savedTheme = null;
   try { savedTheme = localStorage.getItem('portfolio-theme'); } catch (_) {}
   const preferredTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   root.dataset.theme = savedTheme || preferredTheme;
 
+  const updateThemeLabel = () => {
+    const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    themeToggle?.setAttribute('aria-label', `Switch to ${nextTheme} theme`);
+  };
+  updateThemeLabel();
+
   themeToggle?.addEventListener('click', () => {
     const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
     root.dataset.theme = next;
     try { localStorage.setItem('portfolio-theme', next); } catch (_) {}
+    updateThemeLabel();
   });
+
+  const closeMenu = () => {
+    navLinks?.classList.remove('open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.setAttribute('aria-label', 'Open navigation menu');
+  };
 
   menuToggle?.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
   });
 
   navLinks?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuToggle?.setAttribute('aria-expanded', 'false');
+      closeMenu();
     });
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navLinks?.classList.contains('open')) {
+      closeMenu();
+      menuToggle?.focus();
+    }
   });
 
   const updateScroll = () => {
     const y = window.scrollY;
     header?.classList.toggle('scrolled', y > 18);
     const max = document.documentElement.scrollHeight - window.innerHeight;
-    progress.style.width = `${max > 0 ? (y / max) * 100 : 0}%`;
+    if (progress) progress.style.width = `${max > 0 ? (y / max) * 100 : 0}%`;
   };
   updateScroll();
   window.addEventListener('scroll', updateScroll, { passive: true });
@@ -60,55 +78,6 @@
   }, { rootMargin: '-35% 0px -58% 0px' });
   sections.forEach(section => sectionObserver.observe(section));
 
-  const roles = ['Document Intelligence', 'Private Knowledge Assistants', 'AI Workflow Automation', 'Custom AI Prototypes', 'Efficient Deep Learning'];
-  const typedText = document.getElementById('typedText');
-  if (typedText && !reduceMotion) {
-    let roleIndex = 0;
-    let charIndex = roles[0].length;
-    let deleting = true;
-    const type = () => {
-      const role = roles[roleIndex];
-      typedText.textContent = role.slice(0, charIndex);
-      if (deleting) {
-        charIndex--;
-        if (charIndex < 0) {
-          deleting = false;
-          roleIndex = (roleIndex + 1) % roles.length;
-          charIndex = 0;
-          setTimeout(type, 350);
-          return;
-        }
-      } else {
-        charIndex++;
-        if (charIndex > roles[roleIndex].length) {
-          deleting = true;
-          charIndex = roles[roleIndex].length;
-          setTimeout(type, 1300);
-          return;
-        }
-      }
-      setTimeout(type, deleting ? 35 : 65);
-    };
-    setTimeout(type, 1000);
-  }
-
-  const terminalMessages = [
-    'reading financial_document.pdf...',
-    'detecting tables and key fields...',
-    'validating extracted values...',
-    'generating structured JSON...',
-    'exporting verified Excel report...',
-    'workflow completed successfully.'
-  ];
-  const terminalText = document.getElementById('terminalText');
-  if (terminalText && !reduceMotion) {
-    let i = 0;
-    setInterval(() => {
-      terminalText.animate([{ opacity: 0, transform: 'translateY(4px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 320 });
-      terminalText.textContent = terminalMessages[i = (i + 1) % terminalMessages.length];
-    }, 2500);
-  }
-
   const showToast = (message) => {
     toast.textContent = message;
     toast.classList.add('show');
@@ -130,8 +99,8 @@
     const name = String(form.get('name') || '').trim();
     const email = String(form.get('email') || '').trim();
     const message = String(form.get('message') || '').trim();
-    const subject = encodeURIComponent(`AI project enquiry from ${name || 'a visitor'}`);
-    const body = encodeURIComponent(`Hello Dr. Tarun,\n\n${message}\n\nRegards,\n${name}\n${email}`);
+    const subject = encodeURIComponent(`AI project discussion from ${name || 'a visitor'}`);
+    const body = encodeURIComponent(`Hello Dr. Tarun,\n\nProblem / data / workflow and desired outcome:\n${message}\n\nRegards,\n${name}\n${email}`);
     window.location.href = `mailto:tarun.kul@gmail.com?subject=${subject}&body=${body}`;
   });
 

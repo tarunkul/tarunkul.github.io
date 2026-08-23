@@ -1,6 +1,7 @@
 {
-  "name": "Dr. Tarun Kumar Kulshrestha - Portfolio",
+  "name": "Tarun Kulshrestha - Applied AI Systems",
   "short_name": "Tarun AI",
+  "description": "Applied AI research and engineering across document intelligence, private AI, computer vision, and research-to-prototype development.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#07111f",

@@ -9,19 +9,20 @@
   <circle cx="120" cy="620" r="230" fill="#62e6c8" opacity=".12" filter="url(#blur)"/>
   <rect x="75" y="76" width="58" height="58" rx="16" fill="#62e6c8"/>
   <text x="104" y="114" font-family="Arial, sans-serif" font-size="20" font-weight="900" text-anchor="middle" fill="#07111f">TK</text>
-  <text x="75" y="235" font-family="Arial, sans-serif" font-size="67" font-weight="800" fill="#edf5ff">Dr. Tarun Kumar</text>
-  <text x="75" y="310" font-family="Arial, sans-serif" font-size="67" font-weight="800" fill="#edf5ff">Kulshrestha</text>
-  <rect x="76" y="344" width="600" height="5" rx="3" fill="url(#accent)"/>
-  <text x="75" y="410" font-family="Arial, sans-serif" font-size="27" font-weight="600" fill="#9bb0c8">AI/ML Research Scientist · Deep Learning Engineer</text>
-  <text x="75" y="458" font-family="Arial, sans-serif" font-size="21" fill="#9bb0c8">Generative AI · Computer Vision · Efficient AI · LLM Systems</text>
-  <g transform="translate(810 230)">
-    <rect width="260" height="72" rx="18" fill="#10253a" stroke="#38526c"/>
-    <text x="25" y="28" font-family="Arial" font-size="12" fill="#71859d">RESEARCH</text><text x="25" y="52" font-family="Arial" font-size="17" font-weight="700" fill="#edf5ff">Efficient models</text>
-    <path d="M130 72V110" stroke="#62e6c8" stroke-dasharray="5 5"/>
-    <rect y="110" width="260" height="72" rx="18" fill="#10253a" stroke="#62e6c8"/>
-    <text x="25" y="138" font-family="Arial" font-size="12" fill="#71859d">ENGINEERING</text><text x="25" y="162" font-family="Arial" font-size="17" font-weight="700" fill="#edf5ff">Practical pipeline</text>
-    <path d="M130 182V220" stroke="#62e6c8" stroke-dasharray="5 5"/>
-    <rect y="220" width="260" height="72" rx="18" fill="#10253a" stroke="#38526c"/>
-    <text x="25" y="248" font-family="Arial" font-size="12" fill="#71859d">OUTCOME</text><text x="25" y="272" font-family="Arial" font-size="17" font-weight="700" fill="#edf5ff">Deployable AI</text>
+  <text x="75" y="214" font-family="Arial, sans-serif" font-size="61" font-weight="800" fill="#edf5ff">Tarun Kulshrestha</text>
+  <text x="75" y="269" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#7aa7ff">Applied AI Researcher &amp; Engineer</text>
+  <rect x="76" y="305" width="600" height="5" rx="3" fill="url(#accent)"/>
+  <text x="75" y="373" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#edf5ff">Difficult AI problems →</text>
+  <text x="75" y="414" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#edf5ff">practical, working systems.</text>
+  <text x="75" y="475" font-family="Arial, sans-serif" font-size="19" fill="#9bb0c8">Documents · Private AI · Computer Vision · Research → Prototype</text>
+  <g transform="translate(810 185)">
+    <rect width="285" height="64" rx="17" fill="#10253a" stroke="#38526c"/>
+    <text x="22" y="25" font-family="Arial" font-size="11" fill="#71859d">DOCUMENTS</text><text x="22" y="47" font-family="Arial" font-size="16" font-weight="700" fill="#edf5ff">Data &amp; workflows</text>
+    <rect y="78" width="285" height="64" rx="17" fill="#10253a" stroke="#62e6c8"/>
+    <text x="22" y="103" font-family="Arial" font-size="11" fill="#71859d">PRIVATE KNOWLEDGE</text><text x="22" y="125" font-family="Arial" font-size="16" font-weight="700" fill="#edf5ff">Trusted AI assistant</text>
+    <rect y="156" width="285" height="64" rx="17" fill="#10253a" stroke="#38526c"/>
+    <text x="22" y="181" font-family="Arial" font-size="11" fill="#71859d">IMAGES &amp; SENSING</text><text x="22" y="203" font-family="Arial" font-size="16" font-weight="700" fill="#edf5ff">Detection &amp; insight</text>
+    <rect y="234" width="285" height="64" rx="17" fill="#10253a" stroke="#b58cff"/>
+    <text x="22" y="259" font-family="Arial" font-size="11" fill="#71859d">AI IDEA / RESEARCH</text><text x="22" y="281" font-family="Arial" font-size="16" font-weight="700" fill="#edf5ff">Working prototype</text>
   </g>
 </svg>
