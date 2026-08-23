@@ -8,8 +8,7 @@
   const toast = document.getElementById('toast');
   let savedTheme = null;
   try { savedTheme = localStorage.getItem('portfolio-theme'); } catch (_) {}
-  const preferredTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-  root.dataset.theme = savedTheme || preferredTheme;
+  root.dataset.theme = savedTheme || 'light';
 
   const updateThemeLabel = () => {
     const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';

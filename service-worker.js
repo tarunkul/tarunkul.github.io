@@ -1,4 +1,4 @@
-const CACHE = 'tarun-portfolio-v5';
+const CACHE = 'tarun-portfolio-v6';
 const ASSETS = [
   './',
   './index.html',
