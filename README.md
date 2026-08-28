@@ -85,4 +85,4 @@ git push
 - Share image: `assets/og-cover.svg`
 - Deployment checklist: `DEPLOYMENT.md`
 
-The contact form opens a pre-filled email in the visitor's default email application. No visitor data is stored by the site.
+The contact form opens a pre-filled email in the visitor's default email application; its form data is not stored by the site. The live site uses [MapMyVisitors](https://mapmyvisitors.com/) for anonymous traffic analytics such as page views, approximate location, referrer, and device/browser information. It does not identify visitors by name; MapMyVisitors processes analytics requests under its [privacy policy](https://mapmyvisitors.com/b/policy).
